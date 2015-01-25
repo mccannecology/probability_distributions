@@ -1,0 +1,77 @@
+---
+title: "Probability Distributions"
+output: 
+  html_document:
+    toc: true
+runtime: shiny
+---
+
+# Continuous Distributions
+
+## Normal 
+
+```{r, echo=FALSE}
+source("normal.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## log-Normal 
+
+```{r, echo=FALSE}
+source("log-normal.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## t-
+
+```{r, echo=FALSE}
+source("t.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## F-
+
+```{r, echo=FALSE}
+source("F.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## Chi-square 
+
+```{r, echo=FALSE}
+source("chi-square.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## Beta 
+
+```{r, echo=FALSE}
+source("beta.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## Gamma 
+
+```{r, echo=FALSE}
+source("gamma.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+# Discrete Distributions
+
+## Poisson 
+
+```{r, echo=FALSE}
+source("poisson.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+## Binomial 
+
+```{r, echo=FALSE}
+source("binomial.R")
+shinyApp(ui = ui, server = server, options = list(height="100%"))
+```
+
+
+
