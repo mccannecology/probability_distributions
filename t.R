@@ -117,5 +117,3 @@ ui <- shinyUI(pageWithSidebar(
   )
     
 ))
-
-shinyApp(ui = ui, server = server)
