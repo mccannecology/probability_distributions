@@ -1,106 +1,75 @@
 ---
+title: Probability Distributions 
 output: html_document
 runtime: shiny
 ---
-<a name="home"></a>
-
-# Probability Distributions 
-
-
-## Continuous
-- [Normal](#normal)  
-- [log-Normal](#log-normal)  
-- [t-](#t-)  
-- [F-](#F-)  
-- [Chi-square](#chi-square)  
-- [Beta](#beta)  
-- [Gamma](#gamma)  
-
-## Discrete 
-- [Poisson](#poisson)  
-- [Binomial](#binomial)  
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache=FALSE)
 ```
 
-
-<a name="normal"></a>
+# Continuous Distributions 
 
 ## Normal 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("normal.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="log-normal"></a>
-
 ## log-Normal 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("log-normal.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="t-"></a>
-
 ## t-
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("t.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="F-"></a>
-
 ## F-
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("F.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="chi-square"></a>
-
 ## Chi-square 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("chi-square.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="beta"></a>
-
 ## Beta 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("beta.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="gamma"></a>
-
 ## Gamma 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("gamma.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="poisson"></a>
+# Discrete Distributions
 
 ## Poisson 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("poisson.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-<a name="binomial"></a>
-
 ## Binomial 
-[(Home)](#home) 
+
 ```{r, echo=FALSE}
 source("binomial.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
