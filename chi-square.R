@@ -82,10 +82,12 @@ ui <- shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    numericInput("obs", 
-                 label = "Number of observations:", 
-                 min = 0, 
-                 value = 1000),
+    sliderInput("obs", 
+                label = "Number of observations:", 
+                min = 1, 
+                max = 1000,
+                value = 500,
+                step=1),  
     
     sliderInput("df",
                 "degrees of freedom:",

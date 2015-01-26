@@ -87,23 +87,26 @@ ui <- shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    numericInput("obs", 
+    sliderInput("obs", 
                  label = "Number of observations:", 
-                 min = 0, 
-                 value = 1000),
+                 min = 1, 
+                 max = 1000,
+                 value = 500,
+                 step=1),
     
-    numericInput("mean",
+    sliderInput("mean",
                  "Mean:",
+                 min=-50,
+                 max=50,
                  value=0,
-                 step=0.01),
+                 step=0.1),
     
-    numericInput("sd",
+    sliderInput("sd",
                  "Standard deviation:",
                  value=1,
-                 step=0.01),
-    
-    hr(),
-    helpText("Text Here")
+                 min=0.1,
+                 max=100,
+                 step=0.1)
   ),
   
   # GGPLOT

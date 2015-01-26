@@ -83,10 +83,12 @@ ui <- shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    numericInput("obs", 
-                 label = "Number of observations:", 
-                 min = 0, 
-                 value = 1000),
+    sliderInput("obs", 
+                label = "Number of observations:", 
+                min = 1, 
+                max = 1000,
+                value = 500,
+                step=1),
     
     sliderInput("size",
                 "size:",
@@ -100,10 +102,7 @@ ui <- shinyUI(pageWithSidebar(
                 value=0.5,
                 min=0,
                 max=1,
-                step=0.01),
-    
-    hr(),
-    helpText("Text Here")
+                step=0.01)
   ),
   
   # GGPLOT

@@ -8,7 +8,7 @@ runtime: shiny
 knitr::opts_chunk$set(cache=FALSE)
 ```
 
-# Continuous Distributions 
+# Continuous  
 
 ## Normal 
 
@@ -59,7 +59,7 @@ source("gamma.R")
 shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
 ```
 
-# Discrete Distributions
+# Discrete 
 
 ## Poisson 
 

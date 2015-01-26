@@ -89,18 +89,19 @@ ui <- shinyUI(pageWithSidebar(
   headerPanel(""),
   
   sidebarPanel(
-    numericInput("obs", 
-                 label = "Number of observations:", 
-                 min = 0, 
-                 value = 1000),
+    sliderInput("obs", 
+                label = "Number of observations:", 
+                min = 1, 
+                max = 1000,
+                value = 500,
+                step=1),
     
-    numericInput("lambda",
+    sliderInput("lambda",
                  "Lambda:",
+                 min=0.1,
+                 max=15,
                  value=3,
-                 step=0.01),
-    
-    hr(),
-    helpText("Text Here")
+                 step=0.1)
   ),
   
   # GGPLOT
